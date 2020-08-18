@@ -1,0 +1,7 @@
+---
+applications:
+- name: springboot-ems-app
+  path: target\spring-boot-ems-0.0.1-SNAPSHOT.war
+  memory: 1G
+  services:
+   - pvc-mysql   
