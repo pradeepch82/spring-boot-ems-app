@@ -1,17 +1,5 @@
 version: 0.2
-env:
-    variables:
-        CACHE_CONTROL: "86400"
-        S3_BUCKET: "pvc-angular-app"
-        BUILD_FOLDER: "dist"
 phases:
-  install:
-    runtime-versions:
-        nodejs: 12
-    commands:
-        - echo Installing source NPM dependencies...
-        - npm install
-        - npm install -g @angular/cli
   build:
     commands:
         - echo Build started om 'date'
